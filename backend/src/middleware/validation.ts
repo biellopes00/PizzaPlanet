@@ -9,7 +9,7 @@ const handleValidationErrors = async (req: Request, res: Response, next: NextFun
     next();
 }
 
-export const validatreMyUserRequest = [
+export const validateMyUserRequest = [
     body("name").isString().notEmpty().withMessage("Name must be a string"),
     body("addresLin1").isString().notEmpty().withMessage("AddressLine1 must be a string"),
     body("city").isString().notEmpty().withMessage("City must be a string"),
